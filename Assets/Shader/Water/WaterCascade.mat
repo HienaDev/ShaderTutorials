@@ -24,15 +24,20 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: 91f23b6b556bf46439c098509c9a0be2, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _ALPHAPREMULTIPLY_ON
+  - _SPECULAR_SETUP
+  - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses:
   - MOTIONVECTORS
+  - DepthOnly
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -51,13 +56,35 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Blur: 0.705
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 1
+    - _Blur: 0.193
+    - _CastShadows: 1
+    - _Cull: 0
+    - _DstBlend: 10
+    - _FoamScale: 200
+    - _MaskScale: 0.097
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Radius: 1.5
+    - _Radius: 0.15
+    - _ReceiveShadows: 1
+    - _RefractionOpacity: 0.663
+    - _RefractionStrength: 0.05
+    - _Speed: 1
+    - _SrcBlend: 1
+    - _Stylized: 1
+    - _Surface: 1
     - _TEST: 0
-    - _TopDownRadius: 1.5
+    - _TopDownRadius: 0.03
+    - _WaterStrech: 0.05
+    - _WorkflowMode: 0
+    - _ZTest: 4
+    - _ZWrite: 0
+    - _ZWriteControl: 0
     m_Colors:
+    - _Color: {r: 0, g: 0.26041698, b: 1, a: 0}
     - _ObjectPosition: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
